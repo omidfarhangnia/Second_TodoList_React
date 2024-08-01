@@ -1,0 +1,191 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(10, 10, 10);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  justify-content: space-evenly;
+}
+
+.container--heading {
+  width: 90%;
+  height: 45%;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 14px;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.container--header {
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input--container {
+  margin-block: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+.input--container > label {
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.input--container > input,
+textarea,
+select {
+  font-size: 15px;
+  font-family: "playWrite";
+  font-size: 20px;
+  margin-top: 5px;
+  background: black;
+  border: 2px solid rgb(188, 188, 188);
+  border-radius: 30px;
+  padding: 5px 10px;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  resize: none;
+}
+
+.add--btn {
+  font-size: 20px;
+  text-transform: uppercase;
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50px;
+  margin-top: 30px;
+}
+
+.todo--container {
+  width: 90%;
+  height: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 14px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.todo {
+  width: 90%;
+  background: #3c3c3c;
+  padding: 10px;
+  position: relative;
+  margin-block: 5px;
+}
+
+.todo--header {
+  font-size: 25px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.todo--difficulty {
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px;
+  background: black;
+  color: white;
+  position: absolute;
+  text-transform: capitalize;
+  border-radius: 0 0 10px 0;
+  left: 0;
+  top: 0;
+}
+
+.todo--btn {
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background: black;
+  border-radius: 0 0 0 10px;
+}
+
+.todo--des {
+  font-size: 17px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+  margin-top: 1rem;
+  color: #b0b0b0;
+}
+
+.remove--btn{
+  background: transparent;
+  font-size: 15px;
+  border: 2px solid white;
+  border-radius: 30px;
+  display: block;
+  margin: 10px auto;
+  width: 50%;
+  color: white;
+  text-transform: uppercase;
+  padding: 5px 0;
+}
+
+@media (min-width: 576px) {
+  .input--container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .input--container > input,
+  textarea,
+  select {
+    width: 50%;
+  }
+
+  .add--btn {
+    font-size: 30px;
+    padding: 10px;
+    width: 40%;
+    margin-inline: auto;
+  }
+
+  .todo--container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .todo {
+    width: 45%;
+  }
+}
+
+@media (min-width: 992px) {
+  
+  .todo {
+    width: 30%;
+  }
+}
